@@ -1,6 +1,6 @@
 FROM --platform=linux/amd64 ubuntu:22.04
 COPY flag.txt /root/
-RUN apt-get update && apt-get install -y python3 python3-pip curl git sudo dos2unix
+RUN apt-get update && apt-get install -y python3 python3-pip curl git sudo dos2unix python3-flask
 WORKDIR /app
 COPY web_app/ .
 COPY setup.sh .
