@@ -1,0 +1,87 @@
+header {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;           /* Remove default padding */
+}
+
+li {
+    background: #ffebee; /* Light pink background */
+    margin: 10px 0;      /* Space between items */
+    padding: 15px;       /* Padding inside each item */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ff5722;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    font-size: larger;
+}
+
+button {
+    width: 40vw;
+    height: 60px;
+    display: inline-block; /* This makes the button a block element */
+    margin: 100px auto; /* This centers the button horizontally */
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+}
+
+button:hover {
+    background: #e64a19;
+}

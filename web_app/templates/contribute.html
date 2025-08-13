@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute</title>
+    <link rel="stylesheet" href="static/css/base.css">
+        <style>
+
+        h1, h2 {
+            color: #ff5722;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: larger;
+            padding: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ol {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        code {
+            background: #e0e0e0;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="base">
+    <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/product">Product</a>
+            <a href="/contact">Contact</a>
+            <a href="/contribute">Contribute</a>
+    </div>
+    <div class="xcontainer">
+        <div class="content">
+            <h1>Contributing to RedPie</h1>
+
+            <h2>How to Contribute</h2>
+            <ol>
+                <li><strong>Fork the Repository</strong>: Before making any changes, fork the repository to your own GitHub account.</li>
+                <li><strong>Create a Branch</strong>: Always create a new branch for your work. Branch names should follow this convention:
+                    <ul>
+                        <li>For features: <code>feature/feature-name</code></li>
+                        <li>For bug fixes: <code>bugfix/issue-number-description</code></li>
+                        <li>For documentation: <code>docs/description</code></li>
+                    </ul>
+                    Example: <code>feature/add-authentication</code> or <code>bugfix/issue-42-login-error</code>
+                </li>
+                <li><strong>Make Changes</strong>: 
+                    <ul>
+                        <li>Ensure your changes are well-documented, and the code is clean and readable.</li>
+                        <li>Follow the coding style of the project (e.g., indentation, variable naming, etc.).</li>
+                        <li>Include comments when necessary to explain complex logic.</li>
+                    </ul>
+                </li>
+                <li><strong>Test Your Code</strong>: Before submitting a pull request, please test your code to make sure it works as expected and does not break existing functionality.</li>
+            </ol>
+        
+            <h2>Pull Request Guidelines</h2>
+            <ol>
+                <li><strong>Create a Pull Request (PR)</strong>: Once your changes are ready, create a pull request.
+                    <ul>
+                        <li>PRs should have a meaningful title and a clear description of the changes you’ve made.</li>
+                        <li>Reference any relevant issue numbers (e.g., <code>Closes #42</code>).</li>
+                        <li>If your PR addresses a feature or bug fix, please explain the reasoning behind your solution.</li>
+                    </ul>
+                </li>
+                <li><strong>Review Process</strong>: 
+                    <ul>
+                        <li>One or more maintainers will review your pull request.</li>
+                        <li>If changes are requested, please address them promptly.</li>
+                        <li>Once approved, your pull request will be merged into the <code>main</code> branch.</li>
+                    </ul>
+                </li>
+                <li><strong>Avoid Large Pull Requests</strong>: Try to break large changes into smaller, focused pull requests to make them easier to review.</li>
+            </ol>
+        
+            <h2>Issue Reporting</h2>
+            <ol>
+                <li><strong>Check Existing Issues</strong>: Before opening a new issue, check if there’s already an issue covering your problem.</li>
+                <li><strong>Open a New Issue</strong>: If no issue exists, create a new one with a descriptive title and detailed information.
+                    <ul>
+                        <li>For bug reports, include steps to reproduce the issue, expected behavior, and any relevant logs or screenshots.</li>
+                        <li>For feature requests, explain the use case and how it will benefit the project.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <h2>Branch Protection</h2>
+            <p>The <code>main</code> branch is protected. No direct commits are allowed. All changes must be made via pull requests.</p>
+        
+            <h2>Commit Message Guidelines</h2>
+            <p>Please follow these conventions for writing commit messages:</p>
+            <ul>
+                <li>Use the present tense (e.g., "Add feature" not "Added feature").</li>
+                <li>Keep commit messages short and informative.</li>
+                <li>Reference the issue number in your commit message if applicable (e.g., <code>Fix issue #42</code>).</li>
+            </ul>
+        
+            <h2>Repository URL</h2>
+            <p>You can find the repository at: <a href="https://github.com/Taher7013/RedPie.git" target="_blank">RedPie Repository</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
