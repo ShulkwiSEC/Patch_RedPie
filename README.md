@@ -8,6 +8,6 @@ To deploy this challenge on your local machine, simply copy and paste the follow
 ```bash
 $ git clone https://github.com/ShulkwiSEC/Patch_Redpie.git
 $ cd Patch_Redpie
-$ docker build --platform=linux/amd64 -t <image_name> .
+$ docker build -t <image_name> .
 $ docker run <image_name>
 ```
