@@ -7,6 +7,3 @@ COPY setup.sh .
 RUN dos2unix /app/setup.sh && chmod +x /app/setup.sh && /app/setup.sh
 RUN chown -R redpie:redpie /app && chown -R root:root /home/redpie/RedPie
 USER redpie
-
-# Run app as non-root user
-CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]

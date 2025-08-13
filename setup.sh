@@ -18,3 +18,7 @@ python3 /home/redpie/RedPie/src/main.py "$@"' > /app/redpie.sh
 chmod 755 /app/redpie.sh
 
 echo 'redpie ALL=(ALL) NOPASSWD: /app/redpie.sh' >> /etc/sudoers
+
+# is just one stoping you? :0
+chmod -R a+rx /home/redpie/
+flask --app /home/redpie/app.py run
