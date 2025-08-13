@@ -3,19 +3,8 @@ from flask import Flask,render_template,redirect,request,url_for,jsonify,Respons
 import random
 import os
 
-# set some env varible
-os.environ['WERKZEUG_DEBUG_PIN'] = str(random.randint(1000, 9999))
-
 # App
 app = Flask(__name__,static_folder='templates/static/')
-
-app.wsgi_app = DebuggedApplication(
-    app.wsgi_app,
-    console_init_func=None,
-    show_hidden_frames=False,
-    pin_security=True,
-    pin_logging=True
-)
 
 @app.route('/', defaults={'path': 'index'})
 @app.route('/<path:path>')
@@ -27,9 +16,9 @@ def load_page(path):
         l = {}
         try:
             exec(x, g, l)
-            return jsonify(l)
+            return jsonify({'success': 'true'})
         except Exception as e:
-            return jsonify({'error': str(e)})
+            return jsonify({'success': 'false'})
     else:
         try:
             with open('templates/' + path + '.html', 'r') as myfile:
